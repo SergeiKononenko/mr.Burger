@@ -105,29 +105,26 @@
   height: 14px;
   margin-top: 45px; }
 
-.section__nav {position: absolute;
-  right: 350px;
-  top:70px;
+.section__nav {
   width: 16px; }
 
 .section__nav-page {
+  position: relative;
   list-style: none; }
-  .section__nav-page{
+  .section__nav-page::after {
+    content: '';
     display: inline-block;
     position: relative;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background: #c9c9c9;
-    margin: 5px; }
-
-  .section__nav-page:hover::after {
+    margin: 15px; }
+  .section__nav-page:hover {
     content: '';
     display: inline-block;
     position: absolute;
-    right: -6px;
-    top: -6px;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 1px solid #c9c9c9; }
