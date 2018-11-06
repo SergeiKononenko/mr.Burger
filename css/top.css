@@ -106,25 +106,25 @@
   margin-top: 45px; }
 
 .section__nav {
+  position: absolute;
+  top: 50px;
+  right: 350px;
   width: 16px; }
 
 .section__nav-page {
-  position: relative;
   list-style: none; }
   .section__nav-page::after {
     content: '';
     display: inline-block;
-    position: relative;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: #c9c9c9;
-    margin: 15px; }
+    margin: 5px; }
   .section__nav-page:hover {
     content: '';
     display: inline-block;
-    position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     border: 1px solid #c9c9c9; }
