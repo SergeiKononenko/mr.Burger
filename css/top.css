@@ -105,17 +105,17 @@
   height: 14px;
   margin-top: 45px; }
 
-.section__nav {
-  position: absolute;
-  top: 50px;
-  right: 350px;
+.section__nav { position: absolute;
+top: 50px;
+right: 350px;
   width: 16px; }
 
-.section__nav-page {
+.section__nav-page {position: relative;
   list-style: none; }
   .section__nav-page::after {
     content: '';
     display: inline-block;
+    
     width: 6px;
     height: 6px;
     border-radius: 50%;
