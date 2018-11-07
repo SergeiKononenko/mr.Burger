@@ -1,5 +1,5 @@
 .section__top {
-  background: url(./img/video-bg.png) no-repeat;
+  background: url(../img/video-bg.png) no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +78,7 @@
   width: 880px; }
 
 .content__image {
-  background: url(./img/drops.png) 0px 50px no-repeat;
+  background: url(../img/drops.png) 0px 50px no-repeat;
   width: 451px;
   height: 324px; }
 
@@ -114,7 +114,7 @@
 .section__nav {
   position: absolute;
   top: 50px;
-  right: 25%;
+  right: 22%;
   width: 16px; }
 
 .section__nav-list {
@@ -122,21 +122,32 @@
   flex-direction: column; }
 
 .section__nav-page {
-  list-style: none; }
+  list-style: none;
+  position: relative; }
 
 .section__nav-page::after {
   content: '';
   display: inline-block;
+  
+
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #c9c9c9;
   margin: 0px; }
 
-.section__nav-page:hover.section__nav-hover {
+
+  .section__nav-hover::after {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: -6px;
+     content:'';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9; }
+  
+.section__nav-page:hover .section__nav-hover::after {
   display: inline-block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #c9c9c9; }
+  }
