@@ -1,5 +1,5 @@
 .best {
-  background: url(/img/bg.jpg);
+  background: url(./img/bg.jpg);
   width: 1100px;
   height: 649px;
   display: flex;

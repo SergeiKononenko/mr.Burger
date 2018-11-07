@@ -1,6 +1,6 @@
 
 .section__top {
-    background: url(/img/video-bg.png) no-repeat;
+    background: url(./img/video-bg.png) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@ text-align: right;
 }
 
   .content__image{
-background: url(/img/drops.png) 0px 50px no-repeat, ;
+background: url(./img/drops.png) 0px 50px no-repeat, ;
 width: 451px;
 height: 324px;
   }
