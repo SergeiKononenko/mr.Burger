@@ -5,15 +5,25 @@
   flex-direction: row;
   flex-wrap: wrap; }
 
+.comments__image {
+  display: inline-block;
+  position: relative;
+  width: 275px;
+  height: 325px; }
+
+.comments__image--photo {
+  filter: grayscale(100%); }
+
 .comments__hover {
   display: none;
-  height: 325px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.6); }
 
-.comments__image-1:hover .comments__hover {
-  display: flex;
-  flex-direction: column; }
+.comments__image:hover .comments__hover {
+  display: inline-block; }
 
 .comments__hover-title {
   font-family: Gagalin-Regular;
@@ -44,75 +54,3 @@
   color: #ffffff;
   font-size: 13px;
   margin-top: 15px; }
-
-.comments__image-1 {
-  background: url(/img/photo1.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-1:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-2 {
-  background: url(/img/photo2.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-2:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-3 {
-  background: url(/img/photo3.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-3:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-4 {
-  background: url(/img/photo4.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-4:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-5 {
-  background: url(/img/photo5.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-5:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-6 {
-  background: url(/img/photo6.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-6:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-7 {
-  background: url(/img/photo7.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-7:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-8 {
-  background: url(/img/photo8.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-8:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }

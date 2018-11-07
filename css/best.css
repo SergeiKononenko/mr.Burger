@@ -45,17 +45,10 @@ p {
   line-height: 24px;
   text-align: center; }
 
-.best__item--icon1 {
-  background: url(/img/meat.png) center no-repeat;
+.best__item--icon {
   width: 97px;
   height: 89px; }
 
-.best__item--icon2 {
-  background: url(/img/hand.png) center no-repeat;
+.best__item--img {
   width: 97px;
-  height: 89px; }
-
-.best__item--icon3 {
-  background: url(/img/natural.png) center no-repeat;
-  width: 97px;
-  height: 89px; }
+  height: auto; }
