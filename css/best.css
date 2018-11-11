@@ -1,4 +1,4 @@
-.best {
+.section-best {
   background: url(../img/bg.jpg) center center no-repeat;
   display: flex;
   justify-content: center;
@@ -9,22 +9,22 @@
   min-height: 650px;
   background-size: cover; }
 
-.best__title {
+.section-best__title {
+  height: 150px;
   font-family: Gagalin-Regular;
   color: #2f3234;
   font-size: 71.73px;
   font-weight: 400;
-  line-height: 63.745px;
-  margin-bottom: 30px;
-  margin-top: 15px; }
+  line-height: 63.745px; }
 
-.best__list {
+.section-best__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding-left: 0px; }
 
-.best__item {
+.section-best__item {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -47,10 +47,10 @@ p {
   line-height: 24px;
   text-align: center; }
 
-.best__item--icon {
+.section-best__item-icon {
   width: 97px;
   height: 89px; }
 
-.best__item--img {
+.section-best__item-img {
   width: 97px;
   height: auto; }

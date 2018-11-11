@@ -1,5 +1,5 @@
 
-.team
+.section-team
 {background-image: url(/img/team.png);
     position: relative;
     width: 100%;
@@ -10,7 +10,7 @@
     background-size: cover;
     
 }
-.team__accordion{background-color: rgba(47, 50, 52, 0.93);
+.section-team__accordion{background-color: rgba(47, 50, 52, 0.93);
     position: absolute;
     right: 0;
     top: 0;
@@ -20,12 +20,12 @@
 
    
 }
-.team__list{
+.section-team__list{
 list-style: none;
 padding-left: 80px;
 
 }
-.team__title{
+.section-team__title{
     font-family: Gagalin-Regular;
 color: #f9b43b;
 font-size: 71px;
@@ -37,7 +37,7 @@ padding-top: 50px;
 
 }
 
-.team__item{ 
+.section-team__item{ 
     margin-bottom: 15px;
     &.active { .team__item--trigger{
         color:#f9b43b;   
@@ -45,7 +45,7 @@ padding-top: 50px;
     }
 }
 
-.team__item--trigger{
+.section-team__item--trigger{
     display: inline-block;
     font-family: Gagalin-Regular;
 color: #ffffff;
@@ -65,7 +65,7 @@ text-transform: uppercase;
     background-image: url(/img/Polygon1.png);}
 }
 
-.team-content__item{
+.section-content__item{
 
     display: flex;
     flex-direction: row;
@@ -73,13 +73,13 @@ text-transform: uppercase;
     height: 0;
     overflow: hidden;
   }
-  .team-content__item--active {
+  .section-content__item-active {
     display: flex;
     flex-direction: row;
     color: white;
     overflow: hidden; }
 
-    .team__item--trigger-active{
+    .active-trigger{
         display: inline-block;
         font-family: Gagalin-Regular;
         color:#f9b43b; 
@@ -98,11 +98,11 @@ text-transform: uppercase;
         margin-right: 8px;
         background-image: url(/img/Polygon2.png);}}
 
-  .team-content__item-avatar{
+  .section-content__item-avatar{
     margin: 10px;
 
   }
-  .team-content__item-status{
+  .section-content__item-status{
     font-family: Ubuntu-B;
     color:  #ffffff;
     font-size: 14px;
@@ -111,7 +111,7 @@ text-transform: uppercase;
     text-align: left;
 
   }
-.team-content__item-text
+.section-content__item-text
   {
     font-family: Ubuntu-Regular;
     color:  #ffffff;

@@ -1,4 +1,4 @@
-.comments {
+.section-comments {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -7,13 +7,13 @@
   background-position: center center;
   background-size: cover; }
 
-.comments__list {
+.section-comments__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0; }
 
-.comments__list--item {
+.section-comments__list-item {
   position: relative;
   width: 25%;
   height: 50vh;
@@ -23,14 +23,14 @@
   filter: grayscale(1);
   list-style: none; }
 
-.comments__text {
+.section-comments__text {
   display: none;
   height: 50vh;
   justify-content: center;
   padding: 0px;
   background-color: rgba(20, 20, 20, 0.7); }
 
-.comments__list--item:hover .comments__text {
+.section-comments__list-item:hover .section-comments__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,7 @@
   padding-right: 20px;
   padding-left: 20px; }
 
-.comment__text--autor {
+.section-comment__text-autor {
   margin-bottom: 16px;
   font-family: "Gagalin-Regular";
   color: white;
@@ -46,13 +46,13 @@
   line-height: 28px;
   text-transform: uppercase; }
 
-.comment__text--letter {
+.section-comment__text-letter {
   font-size: 14px;
   line-height: 1.7;
   color: white;
   text-align: left; }
 
-.comment__batton {
+.section-comment__batton {
   font-family: Ubuntu-Medium;
   padding: 10px 15px;
   margin-top: 16px;

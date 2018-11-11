@@ -1,9 +1,12 @@
 html, body{
-    min-height: auto;
+    min-height: 100%;
 }
-
-.wrapper{  
-min-height: 1100px;
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wrapper{ height: 100%;
+    overflow: hidden;
 
 }
 
