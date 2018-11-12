@@ -1,5 +1,5 @@
 .section__menu {
-  background-image: url(/img/menu.png);
+  background-image: url(../img/menu.png);
   min-height: 650px;
   height: 100vh;
   display: flex;

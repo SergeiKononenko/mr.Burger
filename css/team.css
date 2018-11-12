@@ -1,5 +1,5 @@
 .section-team {
-  background-image: url(/img/team.png);
+  background-image: url(../img/team.png);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -52,7 +52,7 @@
     width: 9px;
     height: 6px;
     margin-right: 8px;
-    background-image: url(/img/Polygon1.png); }
+    background-image: url(../img/Polygon1.png); }
 
 .section-content__item {
   display: flex;
@@ -84,7 +84,7 @@
     width: 9px;
     height: 6px;
     margin-right: 8px;
-    background-image: url(/img/Polygon2.png); }
+    background-image: url(../img/Polygon2.png); }
 
 .section-content__item-avatar {
   margin: 10px; }
