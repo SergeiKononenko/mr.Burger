@@ -1,0 +1,73 @@
+.section-contacts
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.section-contacts__map{
+    background: url(../img/map.png);
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.footer{
+    background: url(../img/footer.png);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.footer__coll{
+
+display: flex;
+flex-direction: column;
+
+
+}
+
+.footer__coll-adress{
+
+    font-family: Ubuntu-light;
+color: #ffffff;
+font-size: 14px; 
+font-weight: 300;
+line-height: 24px;
+text-align: left;
+
+}
+
+.footer__coll-phone{
+
+   
+font-family: Ubuntu-B;
+color: #e45028;
+font-size: 14px; 
+font-weight: 700;
+line-height: 24px; 
+text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+
