@@ -10,7 +10,7 @@
 
 .header {
   width: 1100px;
-  height: 130px;
+  min-height: 130px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,21 +25,21 @@
   height: 100%;
   width: 92px; }
 
-.nav {
+.menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end; }
 
-.nav__menu {
+.menu__list {
   display: flex;
   flex-direction: row;
   justify-content: end; }
 
-.nav__menu-list {
+.menu__item {
   margin-left: 15px;
   list-style: none; }
-  .nav__menu-list::after {
+  .menu__item::after {
     content: '';
     display: inline-block;
     height: 4px;
@@ -48,10 +48,10 @@
     border-radius: 50%;
     background-color: white;
     margin-left: 15px; }
-  .nav__menu-list:last-child:after {
+  .menu__item:last-child:after {
     display: none; }
 
-.nav__menu-page {
+.menu__link {
   font-family: Ubuntu-Medium;
   color: #ffffff;
   font-size: 13px;
@@ -72,7 +72,7 @@
   height: 35px;
   margin-left: 20px; }
 
-.content__top {
+.section-top__content {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -115,21 +115,21 @@
   width: 29px;
   height: 14px; }
 
-.section__nav {
+.fixed-nav {
   position: fixed;
   right: 45px;
   top: 90px;
   z-index: 20; }
 
-.section__nav-list {
+.fixed-nav__list {
   display: flex;
   flex-direction: column; }
 
-.section__nav-page {
+.fixed-nav__page {
   list-style: none;
   position: relative; }
 
-.section__nav-page::after {
+.fixed-nav__page::after {
   content: '';
   display: inline-block;
   width: 6px;
@@ -138,7 +138,7 @@
   background: #c9c9c9;
   margin: 0px; }
 
-.section__nav-hover::after {
+.fixed-nav__hover::after {
   display: none;
   position: absolute;
   top: 3px;
@@ -149,5 +149,5 @@
   border-radius: 50%;
   border: 1px solid #c9c9c9; }
 
-.section__nav-page:hover .section__nav-hover::after {
+.fixed-nav__page:hover .fixed-nav__hover::after {
   display: inline-block; }
