@@ -1,118 +1,65 @@
-.comments {
-  width: 1100px;
-  height: 650px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+.section-comments {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
-.comments__hover {
+.section-comments__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0; }
+
+.section-comments__list-item {
+  position: relative;
+  width: 25%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(1);
+  list-style: none; }
+
+.section-comments__text {
   display: none;
-  height: 325px;
-  padding: 25px;
-  background-color: rgba(0, 0, 0, 0.6); }
+  height: 50vh;
+  justify-content: center;
+  padding: 0px;
+  background-color: rgba(20, 20, 20, 0.7); }
 
-.comments__image-1:hover .comments__hover {
+.section-comments__list-item:hover .section-comments__text {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 20px;
+  padding-left: 20px; }
 
-.comments__hover-title {
-  font-family: Gagalin-Regular;
-  color: #ffffff;
-  font-size: 13.92px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 15px; }
-
-.comments__hover-content {
-  font-family: Ubuntu-Light;
-  color: #ffffff;
+.section-comment__text-autor {
+  margin-bottom: 16px;
+  font-family: "Gagalin-Regular";
+  color: white;
   font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
+  line-height: 28px;
+  text-transform: uppercase; }
+
+.section-comment__text-letter {
+  font-size: 14px;
+  line-height: 1.7;
+  color: white;
   text-align: left; }
 
-.comments__hover-more {
-  border: solid #2f3234;
-  border-radius: 5px;
-  background-color: #2f3234;
-  width: 110px;
-  height: 35px;
+.section-comment__batton {
   font-family: Ubuntu-Medium;
-  text-transform: uppercase;
-  color: #ffffff;
+  padding: 10px 15px;
+  margin-top: 16px;
   font-size: 13px;
-  margin-top: 15px; }
-
-.comments__image-1 {
-  background: url(/img/photo1.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-1:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-2 {
-  background: url(/img/photo2.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-2:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-3 {
-  background: url(/img/photo3.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-3:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-4 {
-  background: url(/img/photo4.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-4:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-5 {
-  background: url(/img/photo5.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-5:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-6 {
-  background: url(/img/photo6.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-6:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-7 {
-  background: url(/img/photo7.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-7:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
-
-.comments__image-8 {
-  background: url(/img/photo8.png);
-  width: 275px;
-  height: 325px;
-  filter: grayscale(100%); }
-  .comments__image-8:hover .comments__hover {
-    display: flex;
-    flex-direction: column; }
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3c3d3e;
+  border-radius: 5px; }

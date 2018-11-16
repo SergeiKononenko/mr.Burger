@@ -1,33 +1,36 @@
-.best{
-    background: url(/img/bg.jpg);
-    width:1100px;
-    height: 649px;
+.section-best{
+    background: url(../img/bg.jpg) center center no-repeat;
+    
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    background-size: cover;
+
 }
 
-.best__title{
-
+.section-best__title{
     font-family: Gagalin-Regular;
 color: #2f3234;
-font-size: 71.73px; 
+font-size: 71px; 
 font-weight: 400;
-line-height: 63.745px;
-margin-bottom: 30px;
-margin-top: 15px;
+line-height: 63px;
+height: 150px;
 }
 
-.best__list{
+.section-best__list{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding-left:0px;
 }
 
-.best__item{
+.section-best__item{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -54,26 +57,19 @@ text-align: center;
  
 }
 
-.best__item--icon1{
-background: url(/img/meat.png) center no-repeat;
+.section-best__item-icon
+{
 width: 97px;
 height: 89px;
 
 }
 
-.best__item--icon2{
-    background: url(/img/hand.png) center no-repeat;
-    width: 97px;
-    height: 89px;
-    
-    }
+.section-best__item-img
+{
+width: 97px;
+height: auto;
 
-    .best__item--icon3{
-        background: url(/img/natural.png) center no-repeat;
-        width: 97px;
-        height: 89px;
-        
-        }
+}
 
 
 
