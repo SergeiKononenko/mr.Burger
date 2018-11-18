@@ -44,3 +44,12 @@
   font-weight: 700;
   line-height: 24px;
   text-align: left; }
+
+  .footer__sotial-list{
+display: flex;
+flex-direction: row;
+  }
+
+  .footer__sotial-item{
+    list-style: none;
+  }

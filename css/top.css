@@ -39,17 +39,19 @@
 .menu__item {
   margin-left: 15px;
   list-style: none; }
-  .menu__item::after {
-    content: '';
-    display: inline-block;
-    height: 4px;
-    width: 4px;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 15px; }
-  .menu__item:last-child:after {
-    display: none; }
+
+.menu__item::after {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 15px; }
+
+.menu__item:last-child:after {
+  display: none; }
 
 .menu__link {
   font-family: Ubuntu-Medium;
