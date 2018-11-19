@@ -24,14 +24,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: rem(0px); }
+    padding-left: rem(0px); 
+    
+  @include phones{
+   flex-direction: column;
+
+}}
   
   .section-best__item {
     display: flex;
     flex-direction: column;
     padding: rem(10px);
     align-items: center;
-    width: rem(300px); }
+    width: rem(300px);
+    @include tablets{
+      width:30%;}
+  @include phones{
+    width:95%;
+    flex-direction: row;
+
+}}
   
   h4 {
     font-family: Lifehack-Medium;
@@ -51,9 +63,14 @@
   
   .section-best__item-icon {
     width: rem(97px);
-    height: rem(89px); }
+    height: rem(89px); 
+    
+}
   
   .section-best__item-img {
     width: rem(97px);
     height: auto; }
-  
+   
+    .section-best__item-content{
+      text-align: center;
+    }

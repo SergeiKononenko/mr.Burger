@@ -7,13 +7,32 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 13px; } }
 
 .wrapper {
   height: 100%;
+  width: 100%;
   overflow: hidden; }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 58.75rem; }
+  @media (max-width: 768px) {
+    .container {
+      width: 95%; } }
+  @media (max-width: 480px) {
+    .container {
+      width: 95%; } }
+
 .section-top {
-  background: url(../img/video-bg.png) no-repeat;
+  background: url(../img/video-bg.png) center center no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,12 +42,18 @@ html {
   background-size: cover; }
 
 .header {
-  width: 68.75rem;
+  width: 100%;
   min-height: 8.125rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around; }
+  @media (max-width: 768px) {
+    .header {
+      width: 90%; } }
+  @media (max-width: 480px) {
+    .header {
+      width: 90%; } }
 
 .header__logo {
   height: 4.3125rem;
@@ -49,6 +74,12 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: end; }
+  @media (max-width: 768px) {
+    .menu__list {
+      display: none; } }
+  @media (max-width: 480px) {
+    .menu__list {
+      display: none; } }
 
 .menu__item {
   margin-left: 0.9375rem;
@@ -79,6 +110,12 @@ html {
 .hamburger-menu__link {
   position: relative;
   display: none; }
+  @media (max-width: 768px) {
+    .hamburger-menu__link {
+      display: flex; } }
+  @media (max-width: 480px) {
+    .hamburger-menu__link {
+      display: flex; } }
 
 .hamburger-menu__btn {
   display: block;
@@ -90,7 +127,6 @@ html {
   margin-left: 0.75rem; }
   .hamburger-menu__btn::before {
     content: "";
-    display: flex;
     position: absolute;
     top: -0.625rem;
     background-color: white;
@@ -99,7 +135,6 @@ html {
     height: 0.3125rem; }
   .hamburger-menu__btn::after {
     content: "";
-    display: flex;
     position: absolute;
     top: 0.625rem;
     background-color: white;
@@ -126,15 +161,28 @@ html {
   justify-content: space-between;
   position: relative;
   width: 55rem; }
+  @media (max-width: 768px) {
+    .section-top__content {
+      padding: 0 20px 0 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .section-top__content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0 20px; } }
 
 .content__image {
   background: url(../img/drops.png) 0rem 3.125rem no-repeat;
-  width: auto; }
+  max-width: 100%; }
 
 .content__image-pic {
-  width: 26.0625rem;
-  height: auto;
-  margin-left: 1.875rem; }
+  width: 100%;
+  height: auto; }
 
 .content__title-header {
   font-family: Gagalin-Regular;
@@ -152,6 +200,12 @@ html {
   line-height: 3.75rem;
   text-align: left;
   margin-top: 1.875rem; }
+  @media (max-width: 768px) {
+    .content__title-text {
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .content__title-text {
+      text-align: center; } }
 
 .scroll {
   position: absolute;
@@ -167,6 +221,12 @@ html {
   right: 2.8125rem;
   top: 5.625rem;
   z-index: 20; }
+  @media (max-width: 768px) {
+    .fixed-nav {
+      display: none; } }
+  @media (max-width: 480px) {
+    .fixed-nav {
+      display: none; } }
 
 .fixed-nav__list {
   display: flex;
@@ -224,6 +284,9 @@ html {
   justify-content: center;
   align-items: center;
   padding-left: 0rem; }
+  @media (max-width: 480px) {
+    .section-best__list {
+      flex-direction: column; } }
 
 .section-best__item {
   display: flex;
@@ -231,6 +294,13 @@ html {
   padding: 0.625rem;
   align-items: center;
   width: 18.75rem; }
+  @media (max-width: 768px) {
+    .section-best__item {
+      width: 30%; } }
+  @media (max-width: 480px) {
+    .section-best__item {
+      width: 95%;
+      flex-direction: row; } }
 
 h4 {
   font-family: Lifehack-Medium;
@@ -255,6 +325,9 @@ p {
 .section-best__item-img {
   width: 6.0625rem;
   height: auto; }
+
+.section-best__item-content {
+  text-align: center; }
 
 .section-comments {
   position: relative;

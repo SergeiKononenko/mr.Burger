@@ -4,10 +4,32 @@ html, body{
 
 html {
     font-size: 16px;
+    @include tablets{
+        font-size: 14px;
+
+    }
+    @include phones{
+        font-size: 13px;
+
+    }
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .wrapper{ height: 100%;
+    width: 100%;
     overflow: hidden;
 
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: rem(940px);
+    @include tablets{
+        width:95%;}
+    @include phones{
+      width:95%;
+  
+  }
+}
+    

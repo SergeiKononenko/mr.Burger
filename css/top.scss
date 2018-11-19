@@ -1,5 +1,5 @@
 .section-top {
-  background: url(../img/video-bg.png) no-repeat;
+  background: url(../img/video-bg.png) center center no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,12 +9,20 @@
   background-size: cover; }
 
 .header {
-  width: rem(1100px);
+  width: 100%;
+  
   min-height: rem(130px);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-around; 
+  @include tablets{
+    width: 90%;}
+
+@include phones{
+    width: 90%;
+}
+  }
 
 .header__logo {
   height: rem(69px);
@@ -29,12 +37,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end; }
+  justify-content: end; 
+ }
 
 .menu__list {
   display: flex;
   flex-direction: row;
-  justify-content: end; }
+  justify-content: end;
+  @include tablets{
+    display: none;}
+
+@include phones{
+  display: none;
+} }
 
 .menu__item {
   margin-left: rem(15px);
@@ -63,6 +78,13 @@
   .hamburger-menu__link{
     position: relative;
     display: none;
+
+    @include tablets{
+      display: flex;}
+  @include phones{
+    display: flex;
+
+}
   }
 
   .hamburger-menu__btn{
@@ -75,7 +97,7 @@
     margin-left:  rem(12px);
     &::before{
       content: "";
-      display: flex;
+      
     position: absolute;
     top: rem(-10px);
     background-color: white;
@@ -85,7 +107,7 @@
     }
     &::after{
       content: "";
-      display: flex;
+      
     position: absolute;
     top: rem(10px);
     background-color: white;
@@ -113,16 +135,28 @@
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  width: rem(880px); }
+  width: rem(880px); 
+  @include tablets{
+    padding: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  width:100%;}
+@include phones{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width:100%;
+padding: 0 20px;}}
 
 .content__image {
   background: url(../img/drops.png) rem(0px) rem(50px) no-repeat;
-  width: auto; }
+  max-width: 100%; }
 
 .content__image-pic {
-  width: rem(417px);
+  width: 100%;
   height: auto;
-  margin-left: rem(30px); }
+   }
 
 .content__title-header {
   font-family: Gagalin-Regular;
@@ -139,7 +173,12 @@
   font-weight: 500;
   line-height: rem(60px);
   text-align: left;
-  margin-top: rem(30px); }
+  margin-top: rem(30px);
+  @include tablets{
+    text-align: center;}
+
+@include phones{
+   text-align: center; }}
 
 .scroll {
   position: absolute;
@@ -154,7 +193,14 @@
   position: fixed;
   right: rem(45px);
   top: rem(90px);
-  z-index: 20; }
+  z-index: 20; 
+  @include tablets{
+    display: none;
+
+}
+@include phones{
+  display: none;
+}}
 
 .fixed-nav__list {
   display: flex;

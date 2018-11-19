@@ -3,9 +3,15 @@
   }
 
 
+ @mixin tablets {
+   
   @media (max-width: $tablets ){
+   @content;
 
-  }
-  @media (max-width: $phone ) {
+  }}
+ @mixin phones {
+   
+  @media (max-width: $phones ) {
+   @content;
     
-  }
+  }}
