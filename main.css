@@ -283,7 +283,8 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 0rem; }
+  padding-left: 0rem;
+  width: 95%; }
   @media (max-width: 480px) {
     .section-best__list {
       flex-direction: column; } }
@@ -413,10 +414,34 @@ p {
   bottom: 0;
   width: 50%;
   height: 100vh; }
+  @media (max-width: 768px) {
+    .section-team__accordion {
+      width: 100%;
+      left: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 480px) {
+    .section-team__accordion {
+      width: 100%;
+      left: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 .section-team__list {
   list-style: none;
   padding-left: 5rem; }
+  @media (max-width: 768px) {
+    .section-team__list {
+      padding-left: 0; } }
+  @media (max-width: 480px) {
+    .section-team__list {
+      padding-left: 0; } }
 
 .section-team__title {
   font-family: Gagalin-Regular;
@@ -426,6 +451,12 @@ p {
   text-align: left;
   padding-left: 5rem;
   padding-top: 3.125rem; }
+  @media (max-width: 768px) {
+    .section-team__title {
+      padding-left: 0; } }
+  @media (max-width: 480px) {
+    .section-team__title {
+      padding-left: 0; } }
 
 .section-team__item {
   margin-bottom: 0.9375rem; }
@@ -463,6 +494,16 @@ p {
   flex-direction: row;
   color: white;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .section-content__item-active {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 480px) {
+    .section-content__item-active {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; } }
 
 .active-trigger {
   display: inline-block;
@@ -484,7 +525,23 @@ p {
     background-image: url(../img/Polygon2.png); }
 
 .section-content__item-avatar {
-  margin: 0.625rem; }
+  margin: 0.625rem;
+  width: 9.375rem;
+  height: 100%; }
+
+.section-content__item-title {
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 768px) {
+    .section-content__item-title {
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .section-content__item-title {
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
 
 .section-content__item-status {
   font-family: Ubuntu-B;
@@ -493,6 +550,12 @@ p {
   font-weight: 700;
   line-height: 1.5rem;
   text-align: left; }
+  @media (max-width: 768px) {
+    .section-content__item-status {
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .section-content__item-status {
+      text-align: center; } }
 
 .section-content__item-text {
   font-family: Ubuntu-Regular;

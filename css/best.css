@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 29 of C:\public_html\css\best.scss, in `phones'
-        from line 29 of C:\public_html\css\best.scss
+        on line 30 of C:\public_html\css\best.scss, in `phones'
+        from line 30 of C:\public_html\css\best.scss
 
-24:     flex-direction: row;
 25:     justify-content: center;
 26:     align-items: center;
 27:     padding-left: rem(0px); 
-28:     
-29:   @include phones{
-30:    flex-direction: column;
-31: 
-32: }}
-33:   
-34:   .section-best__item {
+28:     width: 95%;
+29:     
+30:   @include phones{
+31:    flex-direction: column;
+32: 
+33: }}
+34:   
+35:   .section-best__item {
 
 Backtrace:
-C:\public_html\css\best.scss:29:in `phones'
-C:\public_html\css\best.scss:29
+C:\public_html\css\best.scss:30:in `phones'
+C:\public_html\css\best.scss:30
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 29 of C:\public_html\css\best.scss, in `phones'\A         from line 29 of C:\public_html\css\best.scss\A \A 24:     flex-direction: row;\A 25:     justify-content: center;\A 26:     align-items: center;\A 27:     padding-left: rem(0px); \A 28:     \A 29:   @include phones{\A 30:    flex-direction: column;\A 31: \A 32: }}\A 33:   \A 34:   .section-best__item {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 30 of C:\public_html\css\best.scss, in `phones'\A         from line 30 of C:\public_html\css\best.scss\A \A 25:     justify-content: center;\A 26:     align-items: center;\A 27:     padding-left: rem(0px); \A 28:     width: 95%;\A 29:     \A 30:   @include phones{\A 31:    flex-direction: column;\A 32: \A 33: }}\A 34:   \A 35:   .section-best__item {"; }
