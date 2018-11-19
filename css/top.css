@@ -5,25 +5,25 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   background-size: cover; }
 
 .header {
-  width: 1100px;
-  min-height: 130px;
+  width: rem(1100px);
+  min-height: rem(130px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
 
 .header__logo {
-  height: 69px;
-  width: 92px;
+  height: rem(69px);
+  width: rem(92px);
   margin-right: auto; }
 
 .header__logo-img {
   height: 100%;
-  width: 92px; }
+  width: rem(92px); }
 
 .menu {
   display: flex;
@@ -37,18 +37,18 @@
   justify-content: end; }
 
 .menu__item {
-  margin-left: 15px;
+  margin-left: rem(15px);
   list-style: none; }
 
 .menu__item::after {
   content: '';
   display: inline-block;
-  height: 4px;
-  width: 4px;
+  height: rem(4px);
+  width: rem(4px);
   vertical-align: middle;
   border-radius: 50%;
   background-color: white;
-  margin-left: 15px; }
+  margin-left: rem(15px); }
 
 .menu__item:last-child:after {
   display: none; }
@@ -56,23 +56,54 @@
 .menu__link {
   font-family: Ubuntu-Medium;
   color: #ffffff;
-  font-size: 13px;
-  line-height: 30px;
+  font-size: rem(13px);
+  line-height: rem(30px);
   text-align: right;
   text-decoration: none;
   text-transform: uppercase; }
 
+.hamburger-menu__link {
+  position: relative;
+  display: none; }
+
+.hamburger-menu__btn {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border-radius: rem(3px);
+  width: rem(25px);
+  height: rem(5px);
+  margin-left: rem(12px); }
+  .hamburger-menu__btn::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: rem(-10px);
+    background-color: white;
+    border-radius: rem(3px);
+    width: rem(25px);
+    height: rem(5px); }
+  .hamburger-menu__btn::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: rem(10px);
+    background-color: white;
+    border-radius: rem(3px);
+    width: rem(25px);
+    height: rem(5px); }
+
 .order {
   font-family: Ubuntu-Medium;
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
-  border: solid 3px #e45028;
-  border-radius: 5px;
+  border: solid rem(3px) #e45028;
+  border-radius: rem(5px);
   background-color: #e45028;
-  width: 97px;
-  height: 35px;
-  margin-left: 20px; }
+  width: rem(97px);
+  height: rem(35px);
+  margin-left: rem(20px); }
 
 .section-top__content {
   display: flex;
@@ -80,47 +111,47 @@
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  width: 880px; }
+  width: rem(880px); }
 
 .content__image {
-  background: url(../img/drops.png) 0px 50px no-repeat;
+  background: url(../img/drops.png) rem(0px) rem(50px) no-repeat;
   width: auto; }
 
 .content__image-pic {
-  width: 417px;
+  width: rem(417px);
   height: auto;
-  margin-left: 30px; }
+  margin-left: rem(30px); }
 
 .content__title-header {
   font-family: Gagalin-Regular;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
-  line-height: 85.024px;
+  line-height: rem(85px);
   text-align: left; }
 
 .content__title-text {
   font-family: Lifehack-Medium;
   color: #ffffff;
-  font-size: 65px;
+  font-size: rem(65px);
   font-weight: 500;
-  line-height: 60px;
+  line-height: rem(60px);
   text-align: left;
-  margin-top: 30px; }
+  margin-top: rem(30px); }
 
 .scroll {
   position: absolute;
-  bottom: 42px;
+  bottom: rem(42px);
   left: 50%; }
 
 .scroll__top-image {
-  width: 29px;
-  height: 14px; }
+  width: rem(29px);
+  height: rem(14px); }
 
 .fixed-nav {
   position: fixed;
-  right: 45px;
-  top: 90px;
+  right: rem(45px);
+  top: rem(90px);
   z-index: 20; }
 
 .fixed-nav__list {
@@ -134,22 +165,22 @@
 .fixed-nav__page::after {
   content: '';
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: rem(6px);
+  height: rem(6px);
   border-radius: 50%;
   background: #c9c9c9;
-  margin: 0px; }
+  margin: rem(0px); }
 
 .fixed-nav__hover::after {
   display: none;
   position: absolute;
-  top: 3px;
-  left: -5px;
+  top: rem(3px);
+  left: rem(-5px);
   content: '';
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   border-radius: 50%;
-  border: 1px solid #c9c9c9; }
+  border: rem(1px) solid #c9c9c9; }
 
 .fixed-nav__page:hover .fixed-nav__hover::after {
   display: inline-block; }

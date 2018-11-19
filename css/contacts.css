@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13,7 +13,7 @@
   background: url(../img/map.png);
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -23,29 +23,29 @@
   position: absolute;
   right: 38%;
   bottom: 58%;
-  max-width: 45px;
-  max-height: 45px; }
+  max-width: rem(45px);
+  max-height: rem(45px); }
 
 .section-contacts__map-marker2 {
   position: absolute;
   right: 50%;
   bottom: 80%;
-  max-width: 45px;
-  max-height: 45px; }
+  max-width: rem(45px);
+  max-height: rem(45px); }
 
 .section-contacts__map-marker3 {
   position: absolute;
   right: 22%;
   bottom: 30%;
-  max-width: 45px;
-  max-height: 45px; }
+  max-width: rem(45px);
+  max-height: rem(45px); }
 
 .section-contacts__map-marker4 {
   position: absolute;
   right: 52%;
   bottom: 20%;
-  max-width: 45px;
-  max-height: 45px; }
+  max-width: rem(45px);
+  max-height: rem(45px); }
 
 .map-marker {
   width: 100%; }
@@ -56,7 +56,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  min-height: 60px; }
+  min-height: rem(60px); }
 
 .footer__coll {
   display: flex;
@@ -65,9 +65,9 @@
 .footer__coll-adress {
   font-family: Ubuntu-light;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
+  line-height: rem(24px);
   text-align: left; }
 
 .footer__coll-phone {
@@ -75,13 +75,13 @@
   flex-direction: row;
   font-family: Ubuntu-B;
   color: #e45028;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
-  line-height: 24px;
+  line-height: rem(24px);
   text-align: left; }
 
 .footer__phone-icon {
-  margin-right: 12px; }
+  margin-right: rem(12px); }
 
 .footer__sotial-list {
   display: flex;
@@ -90,12 +90,12 @@
 
 .footer__sotial-item {
   list-style: none;
-  margin-left: 12px; }
+  margin-left: rem(12px); }
 
 .footer__sotial-icon {
   display: block;
-  max-width: 20px;
-  max-height: 20px; }
+  max-width: rem(20px);
+  max-height: rem(20px); }
 
 .footer__sotial-img {
   width: 100%;

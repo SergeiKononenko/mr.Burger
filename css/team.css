@@ -19,19 +19,19 @@
 
 .section-team__list {
   list-style: none;
-  padding-left: 80px; }
+  padding-left: rem(80px); }
 
 .section-team__title {
   font-family: Gagalin-Regular;
   color: #f9b43b;
-  font-size: 71px;
-  margin-bottom: 50px;
+  font-size: rem(71px);
+  margin-bottom: rem(50px);
   text-align: left;
-  padding-left: 80px;
-  padding-top: 50px; }
+  padding-left: rem(80px);
+  padding-top: rem(50px); }
 
 .section-team__item {
-  margin-bottom: 15px; }
+  margin-bottom: rem(15px); }
   .section-team__item.active .team__item--trigger {
     color: #f9b43b; }
 
@@ -39,9 +39,9 @@
   display: inline-block;
   font-family: Gagalin-Regular;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
-  line-height: 28px;
+  line-height: rem(28px);
   text-align: left;
   text-decoration: none;
   text-transform: uppercase; }
@@ -49,16 +49,16 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 9px;
-    height: 6px;
-    margin-right: 8px;
+    width: rem(9px);
+    height: rem(6px);
+    margin-right: rem(8px);
     background-image: url(../img/Polygon1.png); }
 
 .section-content__item {
   display: flex;
   flex-direction: row;
   color: white;
-  height: 0;
+  height: rem(0px);
   overflow: hidden; }
 
 .section-content__item-active {
@@ -71,9 +71,9 @@
   display: inline-block;
   font-family: Gagalin-Regular;
   color: #f9b43b;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
-  line-height: 28px;
+  line-height: rem(28px);
   text-align: left;
   text-decoration: none;
   text-transform: uppercase; }
@@ -81,25 +81,25 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 9px;
-    height: 6px;
-    margin-right: 8px;
+    width: rem(9px);
+    height: rem(6px);
+    margin-right: rem(8px);
     background-image: url(../img/Polygon2.png); }
 
 .section-content__item-avatar {
-  margin: 10px; }
+  margin: rem(10px); }
 
 .section-content__item-status {
   font-family: Ubuntu-B;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
-  line-height: 24px;
+  line-height: rem(24px);
   text-align: left; }
 
 .section-content__item-text {
   font-family: Ubuntu-Regular;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px; }
+  line-height: rem(24px); }

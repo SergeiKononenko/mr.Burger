@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
@@ -27,7 +27,7 @@
     display: none;
     height: 50vh;
     justify-content: center;
-    padding: 0px;
+    padding: rem(0px);
     background-color: rgba(20, 20, 20, 0.7); }
   
   .section-comments__list-item:hover .section-comments__text {
@@ -35,32 +35,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-right: 20px;
-    padding-left: 20px; }
+    padding-right: rem(20px);
+    padding-left: rem(20px); }
   
   .section-comment__text-autor {
-    margin-bottom: 16px;
+    margin-bottom: rem(16px);
     font-family: "Gagalin-Regular";
     color: white;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: rem(14px);
+    line-height: rem(28px);
     text-transform: uppercase; }
   
   .section-comment__text-letter {
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 1.7;
     color: white;
     text-align: left; }
   
   .section-comment__batton {
     font-family: Ubuntu-Medium;
-    padding: 10px 15px;
-    margin-top: 16px;
-    font-size: 13px;
+    padding: rem(10px) rem(15px);
+    margin-top: rem(16px);
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     background-color: #3c3d3e;
-    border-radius: 5px; }
+    border-radius: rem(5px); }
   

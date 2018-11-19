@@ -1,0 +1,11 @@
+@function rem($px) {
+    @return $px / 16px + 0rem;
+  }
+
+
+  @media (max-width: $tablets ){
+
+  }
+  @media (max-width: $phone ) {
+    
+  }
