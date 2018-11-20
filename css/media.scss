@@ -9,6 +9,7 @@
    @content;
 
   }}
+  
  @mixin phones {
    
   @media (max-width: $phones ) {

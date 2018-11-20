@@ -863,7 +863,7 @@ p {
   width: 100%; }
 
 .footer {
-  background: url(../img/footer.png);
+  background: url(./img/footer.png);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
