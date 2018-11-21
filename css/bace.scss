@@ -3,6 +3,7 @@ html, body{
 }
 
 html {
+    
     font-size: 16px;
     @include tablets{
         font-size: 14px;
@@ -15,20 +16,27 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.wrapper{ height: 100%;
+.wrapper{ 
     width: 100%;
     overflow: hidden;
+    
 
 }
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+  
+    
     width: 100%;
+
     max-width: rem(940px);
+    height: 100vh;
+   
     @include tablets{
-        width:95%;}
+        width:80%;}
     @include phones{
-      width:95%;
+      width:80%;
   
   }
 }

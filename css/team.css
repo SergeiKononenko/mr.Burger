@@ -11,9 +11,9 @@ Error: Undefined mixin 'tablets'.
 20:    @include tablets{
 21:        width: 100%;
 22:     left: 0;
-23:   text-align: center;
-24:   display: flex;
-25:   flex-direction: column;
+23:     height: 100%;
+24:   text-align: center;
+25:   display: flex;
 
 Backtrace:
 C:\public_html\css\team.scss:20:in `tablets'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of C:\public_html\css\team.scss, in `tablets'\A         from line 20 of C:\public_html\css\team.scss\A \A 15:     right: 0;\A 16:     top: 0;\A 17:     bottom: 0;\A 18:    width: 50%;\A 19:    height: 100vh;\A 20:    @include tablets{\A 21:        width: 100%;\A 22:     left: 0;\A 23:   text-align: center;\A 24:   display: flex;\A 25:   flex-direction: column;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of C:\public_html\css\team.scss, in `tablets'\A         from line 20 of C:\public_html\css\team.scss\A \A 15:     right: 0;\A 16:     top: 0;\A 17:     bottom: 0;\A 18:    width: 50%;\A 19:    height: 100vh;\A 20:    @include tablets{\A 21:        width: 100%;\A 22:     left: 0;\A 23:     height: 100%;\A 24:   text-align: center;\A 25:   display: flex;"; }
