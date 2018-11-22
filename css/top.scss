@@ -141,7 +141,7 @@
 .section-top__content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+ 
   align-items: center;
   justify-content: space-between;
   width: 95%; 
@@ -187,10 +187,12 @@ width: 100%;}
    width: 45%;
 
     @include tablets{
-      width: 100%;}
+      width: 100%;
+    }
   
   @include phones{
-    width: 100%;}}
+    width: 100%;
+    margin-top: rem(20px);}}
    
 
 .content__title-header {
