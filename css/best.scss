@@ -45,14 +45,25 @@
     flex-direction: row;
 
 }}
-  
+.section-best__item-content{
+  @include tablets{
+    }
+@include phones{
+  padding-left: rem(30px);
+}}
+
+
   h4 {
     font-family: Lifehack-Medium;
     color: #2f3234;
     font-size: rem(24px);
     font-weight: 500;
     line-height: rem(28px);
-    margin-bottom: rem(0px); }
+    margin-bottom: rem(0px);
+    @include tablets{
+    }
+@include phones{
+  text-align: left; }}
   
   p {
     font-family: Ubuntu-Light;
@@ -60,7 +71,13 @@
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
-    text-align: center; }
+    text-align: center;
+    @include tablets{
+      }
+  @include phones{
+    text-align: left;
+
+} }
   
   .section-best__item-icon {
     width: rem(97px);

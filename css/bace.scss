@@ -26,11 +26,12 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
-    
-    width: 100%;
-
+   
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
     max-width: rem(940px);
+    
     height: 100vh;
    
     @include tablets{

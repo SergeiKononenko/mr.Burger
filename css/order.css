@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 13 of C:\public_html\css\order.scss, in `tablets'
-        from line 13 of C:\public_html\css\order.scss
+        on line 14 of C:\public_html\css\order.scss, in `tablets'
+        from line 14 of C:\public_html\css\order.scss
 
-8:   background-size: cover;
 9: display: flex;
 10: flex-direction: column;
 11: justify-content: center;
 12: align-items: center;
-13: @include tablets {
-14:   width: 100%;
-15: 
-16: }
-17: @include phones{
-18:   width: 100%;
+13: 
+14: @include tablets {
+15:   width: 100%;
+16: 
+17: }
+18: @include phones{
+19:   width: 100%;
 
 Backtrace:
-C:\public_html\css\order.scss:13:in `tablets'
-C:\public_html\css\order.scss:13
+C:\public_html\css\order.scss:14:in `tablets'
+C:\public_html\css\order.scss:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 13 of C:\public_html\css\order.scss, in `tablets'\A         from line 13 of C:\public_html\css\order.scss\A \A 8:   background-size: cover;\A 9: display: flex;\A 10: flex-direction: column;\A 11: justify-content: center;\A 12: align-items: center;\A 13: @include tablets {\A 14:   width: 100%;\A 15: \A 16: }\A 17: @include phones{\A 18:   width: 100%;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 14 of C:\public_html\css\order.scss, in `tablets'\A         from line 14 of C:\public_html\css\order.scss\A \A 9: display: flex;\A 10: flex-direction: column;\A 11: justify-content: center;\A 12: align-items: center;\A 13: \A 14: @include tablets {\A 15:   width: 100%;\A 16: \A 17: }\A 18: @include phones{\A 19:   width: 100%;"; }
