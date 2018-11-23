@@ -170,7 +170,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 95%; }
   @media (max-width: 768px) {
     .section-top__content {
@@ -189,6 +189,7 @@ html {
 
 .content__image {
   background: url(./img/drops.png) 0rem 3.125rem no-repeat;
+  background-size: contain;
   width: 50%; }
   @media (max-width: 768px) {
     .content__image {
@@ -210,14 +211,17 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%; }
+  width: 45%;
+  padding-top: 3.75rem; }
   @media (max-width: 768px) {
     .content__title {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 0rem; } }
   @media (max-width: 480px) {
     .content__title {
       width: 100%;
-      margin-top: 1.25rem; } }
+      margin-top: 1.25rem;
+      padding-top: 0rem; } }
 
 .content__title-header {
   font-family: Gagalin-Regular;

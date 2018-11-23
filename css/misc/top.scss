@@ -143,7 +143,8 @@
   flex-direction: row;
  
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+ 
   width: 95%; 
   
   
@@ -162,6 +163,7 @@ padding: 0 20px;}}
 
 .content__image {
   background: url(./img/drops.png) rem(0px) rem(50px) no-repeat;
+  background-size: contain;
   width: 50%; 
 
   @include tablets{
@@ -185,14 +187,18 @@ width: 100%;}
      justify-content: center;
      align-items: center;
    width: 45%;
+   padding-top: rem(60px);
 
     @include tablets{
       width: 100%;
+      padding-top: rem(0px);
+
     }
   
   @include phones{
     width: 100%;
-    margin-top: rem(20px);}}
+    margin-top: rem(20px);
+    padding-top: rem(0px);}}
    
 
 .content__title-header {
