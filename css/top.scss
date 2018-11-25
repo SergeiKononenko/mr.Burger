@@ -132,7 +132,7 @@
   font-size: rem(13px);
   text-transform: uppercase;
   border: solid rem(3px) #e45028;
-  border-radius: rem(6px);
+  border-radius: rem(5px);
   background-color: #e45028;
   width: rem(97px);
   height: rem(35px);
@@ -293,3 +293,4 @@ bottom: rem(35px);
 
 .fixed-nav__page:hover .fixed-nav__hover::after {
   display: inline-block; }
+
