@@ -165,7 +165,13 @@ html {
   background-color: #e45028;
   width: 6.0625rem;
   height: 2.1875rem;
-  margin-left: 1.25rem; }
+  margin-left: 1.25rem;
+  cursor: pointer; }
+
+.order-link {
+  font-family: Ubuntu-Medium;
+  color: #ffffff;
+  text-decoration: none; }
 
 .section-top__content {
   display: flex;

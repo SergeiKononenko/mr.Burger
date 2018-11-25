@@ -136,7 +136,15 @@
   background-color: #e45028;
   width: rem(97px);
   height: rem(35px);
-  margin-left: rem(20px); }
+  margin-left: rem(20px);
+  cursor: pointer;
+}
+
+.order-link{
+  font-family: Ubuntu-Medium;
+  color: #ffffff;
+text-decoration: none;
+}
 
 .section-top__content {
   display: flex;
