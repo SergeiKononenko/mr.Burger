@@ -1,22 +1,19 @@
-.section-comments{
+.section-comments {
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-}
-.section-comments__list{
+    background-size: cover; }
+  
+  .section-comments__list {
     display: flex;
     flex-wrap: wrap;
-  padding: 0;
-margin: 0; 
-
-}
-
-
-.section-comments__list-item{
+    padding: 0;
+    margin: 0; }
+  
+  .section-comments__list-item {
     position: relative;
     width: 25%;
     height: 50vh;
@@ -25,55 +22,80 @@ margin: 0;
     background-size: cover;
     filter: grayscale(1);
     list-style: none; 
-}
-
-
-.section-comments__text{
+    @include tablets{
+      width: 50%;
+    height: 25vh;}
+  
+  @include phones{
+    width: 50%;
+    height: 25vh; }}
+  
+  .section-comments__text {
     display: none;
     height: 50vh;
     justify-content: center;
-    padding: 0px;
-    background-color: rgba(20, 20, 20, 0.7);
-
-}
-
-.section-comments__list-item:hover .section-comments__text {
+    padding: rem(0px);
+    background-color: rgba(20, 20, 20, 0.7); 
+    @include tablets{
+      height: 25vh;
+    align-items: center;}
+  
+  @include phones{
+    height: 25vh;
+    align-items: center;}}
+  
+  .section-comments__list-item:hover .section-comments__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
-.section-comment__text-autor{
-    margin-bottom: 16px;
+    padding-right: rem(20px);
+    padding-left: rem(20px); 
+    @include tablets{
+      align-items: center;
+       }
+  
+  @include phones{
+    align-items: center;
+  }}
+  
+  .section-comment__text-autor {
+    margin-bottom: rem(16px);
     font-family: "Gagalin-Regular";
     color: white;
-    font-size: 14px;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-
-.section-comment__text-letter{
-
-    font-size: 14px;
+    font-size: rem(14px);
+    line-height: rem(10px);
+    text-transform: uppercase; 
+    @include tablets{
+      font-size: rem(20px);
+      margin-bottom: rem(0px);}
+  
+  @include phones{
+    font-size: rem(30px);}
+  text-align: center;
+line-height: rem(45px);} 
+  
+  .section-comment__text-letter {
+    font-size: rem(14px);
     line-height: 1.7;
     color: white;
-    text-align: left;
-}
-
-.section-comment__batton
-{
+    text-align: left; 
+    @include tablets{
+      text-align: center; 
+      margin: rem(0px);}
+  
+  @include phones{
+    display: none;}}
+  
+  .section-comment__batton {
     font-family: Ubuntu-Medium;
-    padding: 10px 15px;
-    margin-top: 16px;
-    font-size: 13px;
+    padding: rem(10px) rem(15px);
+    margin-top: rem(16px);
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     background-color: #3c3d3e;
-    border-radius: 5px;
-
-}
+    border-radius: rem(5px); }
+  

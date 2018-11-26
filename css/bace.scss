@@ -1,0 +1,45 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    
+    font-size: 16px;
+    @include tablets{
+        font-size: 14px;
+
+    }
+    @include phones{
+        font-size: 13px;
+
+    }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wrapper{ 
+    width: 100%;
+    overflow: hidden;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   height: 100vh;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    max-width: rem(940px);
+    
+    height: 100vh;
+   
+    @include tablets{
+        width:80%;}
+    @include phones{
+      width:80%;
+  
+  }
+}
+    

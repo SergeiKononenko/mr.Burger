@@ -1,0 +1,272 @@
+.section-order {background-image: url(./img/form.png);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: rem(650px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+@include tablets {
+  width: 100%;}
+@include phones{
+  width: 100%;
+}
+}
+
+.container-order{
+  justify-content: center;
+}
+.section__title{
+font-family: Gagalin-Regular;
+color: #f9b43b;
+font-size: rem(70px);
+vertical-align: top; 
+min-height: rem(200px);
+text-align: center;
+
+
+}
+
+
+.order__form_tag{
+width: 100%;
+margin-left: rem(14px);
+color: white;
+font-family: Ubuntu-light;
+}
+
+  .order__form{
+
+    margin: 0 auto;
+    display:flex;
+  
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+
+    }
+  @include phones{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+    
+  }
+  
+  .order__form-col{
+    width:45%;
+    margin-right: rem(15px);
+  
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+      width: 95%;
+      
+
+    }
+  @include phones{
+      width: 95%;
+      
+  }
+    
+  }
+  
+  .order__form-row{
+    margin-bottom:rem(16px);
+    display:flex;
+    flex-direction:row;
+  }
+  
+  .order__form-text{
+    margin-bottom: rem(7px);}
+   
+  .order__form-input{
+    font-size:rem(14px);
+    padding:rem(5px) rem(10px);
+    border:rem(1px)solid #d1cfcb;
+    border-radius:rem(5px);
+    border: none;
+    width:100%;
+  }
+  
+  .order__form-block{
+    width:100%;
+    
+    margin-right:rem(40px);
+  }
+  
+  .order__form-row{
+    display:flex;
+    margin-left:rem(-10px);
+  
+    
+  }
+  
+  .order__form-input_textarea{
+    height:rem(110px);
+    resize:none;
+  }
+  
+  .order__radio{
+    white-space:nowrap;
+    margin-right:rem(20px);
+    cursor:pointer;
+    display: flex;
+    
+  }
+  
+  .order__radio-elem{
+    visibility:hidden;
+  }
+  
+  .order__radio-fake{
+    width:rem(16px);
+    height:rem(16px);
+    border-radius:50%;
+    background:#fff;
+    position:relative;
+  
+    &:after{
+        content:"";
+        display:none;
+        position:absolute;
+        width:rem(8px);
+        height:rem(8px);
+        border-radius:50%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background-color: #e35028;
+    }
+  }
+  
+  
+  .order__radio-elem:checked{
+    &+.order__radio-fake{
+        &:after{
+          display: block;
+        }
+    }
+  }
+  
+  .order__radio_checkbox {
+      .order__radio-elem:checked{
+        &+.order__radio-fake{
+            .checkmark {
+              display: none;
+            }
+        }
+    }
+  }
+  
+  
+  .order__radio-title{
+    font-size:rem(14px);
+    color:#fff;
+    margin-left:rem(10px);
+  }
+  
+  .order__radio_checkbox{
+    .order__radio-fake{
+        border-radius:rem(0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order__radio-elem{
+        &+.order__radio-fake{
+            &:after{
+              background:transparent;
+            }
+        }
+    }
+  }
+  
+  .order__radio_chekbox {
+    .order__radio-elem:checked{
+      .checkmark{
+        display: inline-flex;
+      } 
+    }
+  }
+  
+  .order__form-buttons{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-left:-3%;
+  }
+  
+  .order__form-button{
+    background: #e45028;
+    cursor: pointer;
+    font-size: rem(14px);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: rem(3px);
+    border: none;
+    padding: rem(10px) rem(10px);
+    font-family: Ubuntu-light;
+    font-weight:500;
+  
+  }
+  
+  .order__form-button-reset{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 3%;
+    cursor: pointer;
+    color: #d1cfcb;
+    text-transform: none;
+    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    border-radius: rem(5px);
+    border: none;
+    padding: rem(10px) rem(10px);
+    background:transparent;
+    font-family: Ubuntu-Light;
+    font-weight: 500;
+    &:hover {
+      background:transparent;
+    
+    }
+  }
+  
+  .checkmark {
+      display: inline-flex;
+      width: rem(30px);
+      height:rem(30px);
+      transform: rotate(45deg);
+      position: relative;
+      margin-left:rem(-5px);
+      margin-top: rem(2px);
+  }
+  
+    .checkmark__stem {
+      position: absolute;
+      width:rem(4px);
+      height:rem(10px);
+      background-color: orange;
+      left:rem(11px);
+      top:rem(6px);
+    }
+  
+    .checkmark__kick {
+      position: absolute;
+      width:rem(4px);
+      height:rem(4px);
+      background-color: orange;
+      left:rem(8px);
+      top:rem(12px);
+    }

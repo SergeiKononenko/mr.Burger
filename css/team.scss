@@ -1,0 +1,210 @@
+
+    .section-team
+    {background-image: url(./img/team.png);
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 650px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .section-team__accordion{background-color: rgba(47, 50, 52, 0.93);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+       width: 50%;
+       height: 100vh;
+       @include tablets{
+           width: 100%;
+        left: 0;
+        height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    justify-content: center;}
+    @include phones{
+        width: 100%;
+        height: 100%;
+        left: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    justify-content: center;
+    
+    }
+       
+    }
+    .section-team__list{
+    list-style: none;
+    padding-left: rem(80px);
+    @include tablets{
+          
+            
+        padding-left: 0;
+      }
+      @include phones{
+    
+        padding-left: 0;
+      
+      }
+    
+    }
+    .section-team__title{
+        font-family: Gagalin-Regular;
+    color: #f9b43b;
+    font-size: rem(71px);
+    margin-bottom: rem(50px);
+    text-align: left;
+    padding-left: rem(80px);
+    padding-top: rem(50px);
+    @include tablets{
+          
+            
+        padding-left: 0;
+      }
+      @include phones{
+    
+        padding-left: 0;
+      
+      }
+    
+    }
+    
+    .section-team__item{ 
+        margin-bottom: rem(15px);
+        &.active { .team__item--trigger{
+            color:#f9b43b;   
+        }
+        }
+    }
+    
+    .section-team__item--trigger{
+        display: inline-block;
+        font-family: Gagalin-Regular;
+    color: #ffffff;
+    font-size: rem(14px); 
+    font-weight: 400;
+    line-height: rem(28px);
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:before{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: rem(9px);
+        height: rem(6px);
+        margin-right: rem(8px);
+        background-image: url(./img/Polygon1.png);}
+    }
+    
+    .section-content__item{
+    
+        display: flex;
+        flex-direction: row;
+        color: white;
+        height: rem(0px);
+        overflow: hidden;
+      }
+      .section-content__item-active {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        overflow: hidden; 
+    
+        @include tablets{
+          
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+     @include phones{
+        align-items: center;
+        justify-content: center;
+       flex-direction: column;
+      
+     
+     }}
+    
+        .active-trigger{
+            display: inline-block;
+            font-family: Gagalin-Regular;
+            color:#f9b43b; 
+        font-size: rem(14px); 
+        font-weight: 400;
+        line-height: rem(28px);
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: rem(9px);
+            height: rem(6px);
+            margin-right: rem(8px);
+            background-image: url(./img/Polygon2.png);}}
+    
+      .section-content__item-avatar{
+        margin: rem(10px);
+        width: rem(150px);
+    height: 100%;}
+    
+    .section-content__item-title{
+        display: flex;
+        flex-direction: column;
+        @include tablets{
+          
+            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          @include phones{
+        
+             align-items: center;
+             justify-content: center;
+            
+            text-align: center;
+           
+          
+          }
+    
+    }
+      
+      .section-content__item-status{
+        font-family: Ubuntu-B;
+        color:  #ffffff;
+        font-size: rem(14px);
+        font-weight: 700;
+        line-height: rem(24px);
+        text-align: left;
+        @include tablets{
+          
+            
+            text-align: center;
+          }
+          @include phones{
+        
+           
+            text-align: center;
+           
+          
+          }
+    
+      }
+    .section-content__item-text
+      {
+        font-family: Ubuntu-Regular;
+        color:  #ffffff;
+        font-size: rem(14px);
+        font-weight: 300;
+        line-height: rem(24px);
+       
+        
+      }
