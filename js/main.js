@@ -1,7 +1,7 @@
 
  
 const popupMenu = document.querySelector('#popup-menu');
-const hamburgMenu = document.querySelector('.hamburger-menu__link');
+const hamburgMenu = document.querySelector('.hamburger-menu');
 const popupMenuClose = document.querySelector('.popup-menu__close');
 const popupMenulink = document.querySelector('.popup-menu__list');
 const body = document.querySelector('body');
