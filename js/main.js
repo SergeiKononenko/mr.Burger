@@ -1,5 +1,5 @@
 
-/*Всплывающее меню*/ 
+ 
 const popupMenu = document.querySelector('#popup-menu');
 const hamburgMenu = document.querySelector('.hamburger-menu__link');
 const popupMenuClose = document.querySelector('.popup-menu__close');
