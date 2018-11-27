@@ -224,7 +224,8 @@ html {
   border-radius: 0.1875rem;
   width: 1.5625rem;
   height: 0.3125rem;
-  margin-left: 0.75rem; }
+  margin-left: 0.75rem;
+  cursor: pointer; }
   .hamburger-menu__btn::before {
     content: "";
     position: absolute;

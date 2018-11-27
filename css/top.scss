@@ -204,6 +204,7 @@ z-index: 15; }
     width: rem(25px);
     height: rem(5px);
     margin-left:  rem(12px);
+    cursor: pointer;
     &::before{
       content: "";
       
