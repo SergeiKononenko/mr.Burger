@@ -1,0 +1,94 @@
+.section-burgers{
+    background-image: linear-gradient(to bottom, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    background-size: cover; 
+    position: relative;
+  @include tablets {
+   
+  }
+  @include phones{
+    
+  }};
+  .section-burgers__nav-back{
+      background: url(../img/arrow_scroll.png) center center no-repeat;
+     transform:  rotate(90deg); 
+    width: 10%; 
+    height: 100%;
+  }
+
+  .section-burgers__nav-next{
+    background: url(../img/arrow_scroll.png)center center no-repeat;
+    transform:  rotate(270deg); 
+    width: 10%; 
+    height: 100%;
+    
+  }
+
+.burgers-content__img{
+display: flex;
+position: relative;
+
+}
+
+  .burgers-content__img-comp{
+      display: flex;
+ background: rgb(227, 80, 40 );
+width: rem(90px);
+height: rem(90px);
+position: absolute;
+top: 0;
+left: 0;
+border: solid black 3px;
+
+  }
+
+.burgers-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+
+}
+.burgers-content__title-head{
+
+    font-size: rem(72px);
+    font-family: Gagalin-Regular;
+    margin-bottom: rem(12px);
+color: white;
+}
+
+.burgers-content__title-paragraph{
+    font-family: Ubuntu-Light;
+    font-weight: 300;
+    margin-top: rem(30px);
+color:white;
+
+}
+
+.burgers-content__price{
+display: inline-block;
+   
+
+}
+
+.burgers-content__price-rate{
+    display: inline-block;
+    font-size: rem(72px);
+    font-family: Gagalin-Regular;
+    color: #e35028;
+
+}
+
+.burgers-content__currency{
+    display: inline-block;
+    font-size: rem(30px);
+    font-family: Gagalin-Regular;
+    color: #e35028;
+
+
+}
