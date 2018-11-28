@@ -29,31 +29,128 @@
     
   }
 
-.burgers-content__img{
-display: flex;
-position: relative;
 
-}
 
-  .burgers-content__img-comp{
-      display: flex;
- background: rgb(227, 80, 40 );
-width: rem(90px);
-height: rem(90px);
-position: absolute;
-top: 0;
-left: 0;
-border: solid black 3px;
-
-  }
 
 .burgers-content{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 80%;
-
+    height: 100%;
+    @include tablets{
+       flex-direction: column;
+    justify-content: center; 
+padding-top: 20px;}
+    
+    @include phones{
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+        }
 }
+
+.burgers-content__img{
+    display: flex;
+    width:50%;
+    position: relative;
+    @include tablets{
+        
+    width: 70%; }
+     
+     @include phones{
+        
+        width:100%; }
+    
+    }
+    
+    .burgers-content__img-burger{
+        
+ height: auto;
+  max-width: 100%;
+object-fit: contain;
+    }
+    
+      .burgers-content__img-comp{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     background: rgb(227, 80, 40 );
+    width: rem(90px);
+    height: rem(90px);
+    position: absolute;
+    top: rem(-90px);
+    left: 0;
+    border-radius: 5px;
+    @include tablets{
+        top: rem(-30px);
+        left:rem(-30px);
+    }
+     
+     @include phones{
+       
+        top: rem(20px); 
+        width: rem(70px);
+        height: rem(70px);}
+      }
+    
+      .burgers-content__img-icon{
+        width: 50%;
+        height: auto;
+    
+    }
+    
+    .burgers-content__img-title{
+      font-size: rem(16px);
+    font-family: Gagalin-Regular;
+    color: white; 
+    
+    }
+.burgers-content__img-cal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem(120px);
+   height: rem(120px);
+position: absolute;
+left: 0;
+bottom: rem(-90px);
+@include tablets{
+    top: rem(-40px);
+    left: 75%;
+}
+ 
+ @include phones{
+   
+    top: rem(0px);
+    left: 85%;}
+}
+
+.burgers-content__img-kkl{
+position: absolute;
+top: 40%;
+left: 36%;
+font-size: rem(20px);
+    font-family: Gagalin-Regular;
+    color: white; 
+  
+}
+
+.burgers-content__title{
+    display: flex;
+    flex-direction: column;
+     width: 50%;
+     @include tablets{
+        text-align: center;
+    width: 80%; }
+     
+     @include phones{
+        text-align: center;
+        width: 90%; }
+}
+
 .burgers-content__title-head{
 
     font-size: rem(72px);
