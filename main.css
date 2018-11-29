@@ -685,7 +685,7 @@ p {
   overflow: hidden; }
 
 .section-content__item-active {
-  display: flex;
+  display: none;
   flex-direction: row;
   color: white;
   overflow: hidden; }
@@ -700,7 +700,7 @@ p {
       justify-content: center;
       flex-direction: column; } }
 
-.active-trigger {
+.section-team__active-trigger {
   display: inline-block;
   font-family: Gagalin-Regular;
   color: #f9b43b;
@@ -710,7 +710,7 @@ p {
   text-align: left;
   text-decoration: none;
   text-transform: uppercase; }
-  .active-trigger:before {
+  .section-team__active-trigger:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -762,6 +762,7 @@ p {
 .section__menu {
   background-image: url(./img/menu.png);
   min-height: 40.625rem;
+  width: 100%;
   height: 100vh;
   display: flex;
   overflow: hidden;
@@ -771,7 +772,8 @@ p {
 
 .menu-accord {
   display: flex;
-  margin: 0; }
+  margin: 0;
+  z-index: 10; }
 
 .section__menu-title {
   color: white;
@@ -791,7 +793,7 @@ p {
   display: block;
   width: 5rem;
   height: 100%;
-  text-decoration: none;
+  cursor: pointer;
   position: relative; }
 
 .menu-accord__trigger-text {
@@ -808,14 +810,15 @@ p {
   transform-origin: 0 0;
   margin-top: -1.25rem; }
 
-.menu-accord__trigger-text.menu-accord__trigger-active {
-  color: #f9b43b; }
-
 .menu-accord__content {
   height: 100%;
-  background: rgba(47, 50, 52, 0.9);
-  width: 0;
-  overflow: hidden; }
+  background: rgba(47, 50, 52, 0.93);
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 0; }
 
 .menu-accord__text {
   font-family: Ubuntu-Medium;
@@ -825,7 +828,14 @@ p {
   font-weight: 300;
   line-height: 1.5rem;
   text-align: left;
-  display: none; }
+  display: flex;
+  width: auto; }
+
+.menu-accord__item--active .menu-accord__content {
+  width: 100%; }
+
+.menu-accord__item--active .menu-accord__trigger-text {
+  color: #f9b43b; }
 
 .section-order {
   background-image: url(./img/form.png);

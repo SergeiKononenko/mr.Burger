@@ -112,7 +112,7 @@
         overflow: hidden;
       }
       .section-content__item-active {
-        display: flex;
+        display: none;
         flex-direction: row;
         color: white;
         overflow: hidden; 
@@ -131,7 +131,7 @@
      
      }}
     
-        .active-trigger{
+        .section-team__active-trigger{
             display: inline-block;
             font-family: Gagalin-Regular;
             color:#f9b43b; 
