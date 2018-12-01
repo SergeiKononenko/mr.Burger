@@ -90,5 +90,34 @@ team.addEventListener('click', function(e) {
     })
   };
 
+// comments//
+const commentsList = document.querySelector('.section-comments__list');
+const overlay = document.querySelector('.overlay');
+const popupModal = document.querySelector('.popup-modal__text');
+const popupModalClose = document.querySelector('.popup-modal__close');
 
+commentsList.addEventListener('click', e => {
+  let element = e.target;
   
+  if (document.querySelector('.section-comment__batton')) {
+    let modalText = element.previousElementSibling.innerHTML;
+    
+    popupModal.innerHTML = modalText;
+    overlay.style.display = 'block';
+  }
+});
+
+
+
+document.addEventListener('keyup', e => {
+  let keyName = e.keyCode;
+  
+  if (keyName === 27) {
+    overlay.style.display = 'none';
+  }
+});
+
+popupModalClose.addEventListener('click', function(){
+  overlay.style.display = 'none';
+
+ })
