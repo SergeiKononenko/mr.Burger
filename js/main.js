@@ -26,7 +26,7 @@ const body = document.querySelector('body');
        
    });
 
-   // menu //
+   // hamburger_menu //
 
 const menu = document.querySelector('.section__menu');
 const menuItem = document.querySelectorAll('.menu-accord__item');
@@ -56,5 +56,39 @@ menu.addEventListener('click', function(e) {
         
       }
     })
-  }
+  };
+
+  // team //
+
+  const team = document.querySelector('.section-team__accordion');
+const teamItem = document.querySelectorAll('.section-team__item');
+let teamItemlength = teamItem.length;
+
+team.addEventListener('click', function(e) {
+    for (let i = 0; i < teamItemlength; i++) {
+      teamItem[i].classList.remove('section-team__item--active');
+      
+    }
+  })
+  
+  for (let i = 0; i < teamItemlength; i++) {
+    teamItem[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      if (teamItem[i].classList.contains('section-team__item--active')) {
+        teamItem[i].classList.remove('section-team__item--active');
+        
+      } else {
+        for (let i = 0; i < teamItemlength; i++) {
+          teamItem[i].classList.remove('section-team__item--active');
+          
+        }
+        teamItem[i].classList.add('section-team__item--active');
+        
+      }
+    })
+  };
+
+
   

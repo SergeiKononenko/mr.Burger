@@ -77,12 +77,11 @@
     
     .section-team__item{ 
         margin-bottom: rem(15px);
-        &.active { .team__item--trigger{
-            color:#f9b43b;   
-        }
-        }
+        cursor: pointer;
     }
-    
+    .section-team__item--active {.section-team__item--trigger{color:#f9b43b;}}
+
+
     .section-team__item--trigger{
         display: inline-block;
         font-family: Gagalin-Regular;
@@ -111,12 +110,12 @@
         height: rem(0px);
         overflow: hidden;
       }
-      .section-content__item-active {
-        display: none;
+      .section-team__item--active {.section-content__item {
+        display: flex;
         flex-direction: row;
         color: white;
         overflow: hidden; 
-    
+        height: 100%;
         @include tablets{
           
        flex-direction: column;
@@ -129,9 +128,9 @@
        flex-direction: column;
       
      
-     }}
+     }}}
     
-        .section-team__active-trigger{
+     .section-team__item--active {.section-team__item--trigger{
             display: inline-block;
             font-family: Gagalin-Regular;
             color:#f9b43b; 
@@ -148,7 +147,7 @@
             width: rem(9px);
             height: rem(6px);
             margin-right: rem(8px);
-            background-image: url(./img/Polygon2.png);}}
+            background-image: url(./img/Polygon2.png);}}}
     
       .section-content__item-avatar{
         margin: rem(10px);
