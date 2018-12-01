@@ -157,6 +157,11 @@ font-size: rem(20px);
     font-family: Gagalin-Regular;
     margin-bottom: rem(12px);
 color: white;
+@include tablets{
+    }
+ 
+ @include phones{
+    font-size: rem(60px); }
 }
 
 .burgers-content__title-paragraph{
@@ -164,7 +169,11 @@ color: white;
     font-weight: 300;
     margin-top: rem(30px);
 color:white;
+@include tablets{
+}
 
+@include phones{
+    margin-top: rem(15px);}
 }
 
 .burgers-content__price{

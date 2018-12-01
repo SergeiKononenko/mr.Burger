@@ -847,10 +847,10 @@ p {
 
 .section__menu {
   background-image: url(./img/menu.png);
+  display: flex;
   min-height: 40.625rem;
   width: 100%;
   height: 100vh;
-  display: flex;
   overflow: hidden;
   position: relative;
   justify-content: flex-end;
@@ -1377,12 +1377,18 @@ p {
   font-family: Gagalin-Regular;
   margin-bottom: 0.75rem;
   color: white; }
+  @media (max-width: 480px) {
+    .burgers-content__title-head {
+      font-size: 3.75rem; } }
 
 .burgers-content__title-paragraph {
   font-family: Ubuntu-Light;
   font-weight: 300;
   margin-top: 1.875rem;
   color: white; }
+  @media (max-width: 480px) {
+    .burgers-content__title-paragraph {
+      margin-top: 0.9375rem; } }
 
 .burgers-content__price {
   display: inline-block; }
