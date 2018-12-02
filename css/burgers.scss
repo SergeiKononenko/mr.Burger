@@ -53,13 +53,14 @@ padding-top: 20px;}
 .burgers-content__img{
     display: flex;
     width:50%;
+   
     position: relative;
     @include tablets{
         
     width: 70%; }
      
      @include phones{
-        
+        height: 37%;
         width:100%; }
     
     }

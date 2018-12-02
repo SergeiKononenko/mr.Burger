@@ -1298,6 +1298,7 @@ p {
       width: 70%; } }
   @media (max-width: 480px) {
     .burgers-content__img {
+      height: 37%;
       width: 100%; } }
 
 .burgers-content__img-burger {
