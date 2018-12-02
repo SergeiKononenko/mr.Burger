@@ -76,7 +76,7 @@ object-fit: contain;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-     background: rgb(227, 80, 40 );
+     background-color: rgb(250, 126, 54);
     width: rem(90px);
     height: rem(90px);
     position: absolute;
@@ -198,3 +198,55 @@ display: inline-block;
 
 
 }
+/** ингридиенты**/
+
+.ingredients__table {
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    z-index: 200;
+    color: #2f3234;
+    font-family: Ubuntu-light;
+    font-weight: 300;
+    font-style: normal;
+    width: rem(270px);
+    padding: rem(20px);
+    table-layout: fixed; 
+    @include tablets{
+        }
+ 
+ @include phones{
+    left: rem(70px);  }
+}
+    
+
+    .ingredients__table td {
+      padding: rem(5px); }
+
+      .ingredients__table td:first-child {
+        
+        width:rem(65px); }
+
+        .ingredients__table td:first-child + td {
+          font-weight: 500;
+          width: rem(100px); }
+
+      .ingredients__table td:last-child {
+        text-align: right;
+        width: rem(50px); }
+  
+        .ingredients__icon{
+        width:rem(40px);
+
+        }
+  
+  .burgers-content__img-comp:hover {
+    background-color: #e35028; }
+    .burgers-content__img-comp:hover .ingredients__table {
+      display:flex;
+     }
+  

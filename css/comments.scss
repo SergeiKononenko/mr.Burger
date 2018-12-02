@@ -137,9 +137,11 @@
 
     .popup-modal .section-comment__text-autor {
 color:#f9b43b;
+text-align: center;
 font-size: rem(18px);
 @include tablets{
   font-size: rem(22px);
+  text-align: center;
 }
 
 @include phones{
@@ -149,13 +151,14 @@ font-size: rem(22px);
 
     .popup-modal .section-comment__text-letter{
 color: #3c3d3e;
-text-align: center;
+
 @include tablets{
   font-size: rem(18px);}
-
+  text-align: center;
 @include phones{
 display: flex;
 font-size: rem(18px);
+text-align: center;
 }
     }
 
