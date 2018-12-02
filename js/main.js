@@ -44,7 +44,8 @@ menu.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
       
-      if (menuItem[i].classList.contains('menu-accord__item--active')) {
+      if (menuItem[i].classList.contains('menu-accord__item--active'))
+       {
         menuItem[i].classList.remove('menu-accord__item--active');
         
       } else {
@@ -120,4 +121,34 @@ document.addEventListener('keyup', e => {
 popupModalClose.addEventListener('click', function(){
   overlay.style.display = 'none';
 
- })
+ });
+
+ //burgers//
+
+ var slide_left=document.querySelector('.section-burgers__nav-back');
+ var slide_right=document.querySelector('.section-burgers__nav-next');
+ 
+ var slider=document.querySelectorAll('.burgers-content'); /*Получаем все фото*/
+idx=0; /*Индекс массива фото*/
+ 
+ slide_right.addEventListener('click', moveLeft);
+function moveLeft(){
+    slide_left.style.display = 'flex';
+    slider[idx].style.display = 'none';
+    slider[++idx].style.display = 'flex';
+    if (idx === slider.length - 1) {
+      slide_right.style.display = 'none';
+      slider[idx].style.display = 'flex';
+    }
+}
+
+slide_left.addEventListener('click', moveRight);
+function moveRight(){
+    slide_right.style.display = 'flex';
+    slider[idx].style.display = 'none';
+    slider[--idx].style.display = 'flex';
+    if (idx === 0) {
+      slide_left.style.display = 'none';
+      slider[idx].style.display = 'flex';
+    }
+}

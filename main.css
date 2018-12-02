@@ -1263,17 +1263,21 @@ p {
 .section-burgers__nav-back {
   background: url(./img/arrow_scroll.png) center center no-repeat;
   transform: rotate(90deg);
+  width: 100%;
+  display: none; }
+
+.section-burgers__nav {
+  display: flex;
   width: 10%;
   height: 100%; }
 
 .section-burgers__nav-next {
   background: url(./img/arrow_scroll.png) center center no-repeat;
   transform: rotate(270deg);
-  width: 10%;
-  height: 100%; }
+  width: 100%; }
 
 .burgers-content {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   width: 80%;
@@ -1289,9 +1293,14 @@ p {
       justify-content: center;
       padding-bottom: 20px; } }
 
+.burgers-content__active {
+  display: flex; }
+
 .burgers-content__img {
   display: flex;
   width: 50%;
+  max-height: 50%;
+  align-content: center;
   position: relative; }
   @media (max-width: 768px) {
     .burgers-content__img {
