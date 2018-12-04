@@ -1,11 +1,12 @@
 html, body{
     height: 100%;
     margin: 0;
+
     
 }
 
 html {
-    
+   
     font-size: 16px;
     @include tablets{
         font-size: 14px;
@@ -19,10 +20,15 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 .wrapper{ 
+    height: 100%;
     width: 100%;
     overflow: hidden;
     
-
+}
+.maincontent{
+    height: 100%;
+    transform:  translateY(0);
+    transition: transform 1.5s;
 }
 .container{
     display: flex;

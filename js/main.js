@@ -151,4 +151,70 @@ function moveRight(){
       slide_left.style.display = 'none';
       slider[idx].style.display = 'flex';
     }
+};
+
+//scroll//
+const section = $('section');
+const display = $('.maincontent');
+let inScroll = false;
+const setActivePage = pageEq => {
+  $('fixed-nav__page').eq(pageEq).addClass('active')
+  .siblings()
+  .removeClass('active');
+
 }
+
+const performTransition = sectionEq => {
+  const position = (sectionEq * -100)+'%';
+    
+  if(inScroll === false){
+    inScroll=true;
+     display.css({
+    'transform' : 'translateY(' + position + ')',
+
+  });
+
+section
+.eq(sectionEq)
+.addClass("active")
+.siblings()
+.removeClass("active");
+ 
+setTimeout(() =>{
+inScroll=false;
+setActivePage(sectionEq);
+}, 1000+300);
+
+}
+ 
+};
+
+const scrollToSection = direction => {
+const activeSection = section.filter(".active");
+const prevSection = activeSection.prev();
+const nextSection = activeSection.next();
+
+if (direction === "up" && prevSection.length) {
+  performTransition(prevSection.index());
+}
+
+if (direction === "down" && nextSection.length) {
+  performTransition(nextSection.index());
+}
+};
+
+$(document).on('wheel', e =>{
+  const deltaY = e.originalEvent.deltaY;
+
+  if(deltaY > 0) {//вниз 
+   console.log('вниз')
+    scrollToSection('down');
+  }
+
+  if(deltaY < 0){//вверх 
+    console.log('вверх')
+    
+    scrollToSection('up');
+  }
+});
+
