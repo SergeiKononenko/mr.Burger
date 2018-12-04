@@ -155,89 +155,79 @@ function moveRight(){
 };
 
 //scroll//
-const section = $('section');
-const display = $('.maincontent');
+const sections = $("section");
+const display = $(".maincontent");
 let inScroll = false;
+
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
 const setActivePage = pageEq => {
-  $('.fixed-nav__page')
-  .eq(pageEq)
-  .addClass('active')
-  .siblings()
-  .removeClass('active');
-
-};
+  $('.fixed-nav__page').eq(pageEq).addClass('active')
+    .siblings().removeClass('active')
+} 
 
 const performTransition = sectionEq => {
-  const position = (sectionEq * -100)+'%';
-    
-  if(
-    inScroll === false){
-    inScroll=true;
-    section.eq(sectionEq)
-.addClass("active")
-.siblings()
-.removeClass("active")
-     display.css({
-    transform: `translate(0, ${position})`,
+  const position = `${sectionEq * -100}%`;
 
+  if (inScroll) return;
+
+  inScroll = true;
+
+  sections
+    .eq(sectionEq)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+
+  display.css({
+    transform: `translate(0, ${position})`,
+    "-webkit-transform": `translate(0, ${position})`
   });
 
-
- 
-setTimeout(() =>{ 
-inScroll = false;
-setActivePage(sectionEq);
-}, 1000+300);
-
-}
- 
+  setTimeout(() => {
+    inScroll = false;
+    setActivePage(sectionEq);
+  }, 1300); // продолжительность анимации + 300ms - потому что закончится инерция
 };
 
 const scrollToSection = direction => {
-const activeSection = section.filter(".active");
-const prevSection = activeSection.prev();
-const nextSection = activeSection.next();
+  const activeSection = sections.filter(".active");
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
 
-if (direction === "up" && prevSection.length) {
-  performTransition(prevSection.index());
-}
+  if (direction === "up" && prevSection.length) {
+    performTransition(prevSection.index());
+  }
 
-if (direction === "down" && nextSection.length) {
-  performTransition(nextSection.index());
-}
+  if (direction === "down" && nextSection.length) {
+    performTransition(nextSection.index());
+  }
 };
 
-$(document).on('wheel', e =>{
-  const deltaY = e.originalEvent.deltaY;
+$(document).on({
+  wheel: e => {
+    const deltaY = e.originalEvent.deltaY;
+    const direction = deltaY > 0 ? "down" : "up";
 
-  if(deltaY > 0) {//вниз 
-   console.log('вниз')
-    scrollToSection('down');
-  }
+    scrollToSection(direction);
+  },
+  keydown: e => {
+    switch (e.keyCode) {
+      case 40:
+        scrollToSection("down");
+        break;
 
-  if(deltaY < 0){//вверх 
-    console.log('вверх')
-    
-    scrollToSection('up');
-  }
-$(document).on('keydown', e => {
+      case 38:
+        scrollToSection("up");
+        break;
+    }
+  },
+  touchmove: e => e.preventDefault()
 
-  console.log(e.keyCode);
-  switch (e.keyCode) {
-    case 40:
-      scrollToSection("down");
-      break;
-
-    case 38:
-      scrollToSection("up");
-      break;
-  }})
-
-  touchmove: e => e.preventDefault();
+  // touchstart touchend touchmove 
 });
+
 
 $('[data-scroll-to]').on('click', e => {
   e.preventDefault();
@@ -252,14 +242,11 @@ $('[data-scroll-to]').on('click', e => {
 if (isMobile) {
   $(document).swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      /**
-       * плагин возвращает фактическое...
-       * ...
-       */
+    
       const scrollDirection = direction === 'down' ? 'up' : 'down';
       
       scrollToSection(scrollDirection);
     }
-  })
+  });
 }
 
