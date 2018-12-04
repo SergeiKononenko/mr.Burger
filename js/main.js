@@ -99,13 +99,14 @@ const popupModalClose = document.querySelector('.popup-modal__close');
 
 commentsList.addEventListener('click', e => {
   let element = e.target;
-  
-  if (document.querySelector('.section-comment__batton')) {
+  console.log(e.target);
+  if (document.querySelector(".section-comment__batton")) {
     let modalText = element.previousElementSibling.innerHTML;
     
     popupModal.innerHTML = modalText;
     overlay.style.display = 'block';
   }
+  else( overlay.style.display = 'none')
 });
 
 
@@ -157,31 +158,37 @@ function moveRight(){
 const section = $('section');
 const display = $('.maincontent');
 let inScroll = false;
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 const setActivePage = pageEq => {
-  $('fixed-nav__page').eq(pageEq).addClass('active')
+  $('.fixed-nav__page')
+  .eq(pageEq)
+  .addClass('active')
   .siblings()
   .removeClass('active');
 
-}
+};
 
 const performTransition = sectionEq => {
   const position = (sectionEq * -100)+'%';
     
-  if(inScroll === false){
+  if(
+    inScroll === false){
     inScroll=true;
+    section.eq(sectionEq)
+.addClass("active")
+.siblings()
+.removeClass("active")
      display.css({
-    'transform' : 'translateY(' + position + ')',
+    transform: `translate(0, ${position})`,
 
   });
 
-section
-.eq(sectionEq)
-.addClass("active")
-.siblings()
-.removeClass("active");
+
  
-setTimeout(() =>{
-inScroll=false;
+setTimeout(() =>{ 
+inScroll = false;
 setActivePage(sectionEq);
 }, 1000+300);
 
@@ -216,7 +223,43 @@ $(document).on('wheel', e =>{
     
     scrollToSection('up');
   }
+$(document).on('keydown', e => {
+
+  console.log(e.keyCode);
+  switch (e.keyCode) {
+    case 40:
+      scrollToSection("down");
+      break;
+
+    case 38:
+      scrollToSection("up");
+      break;
+  }})
 
   touchmove: e => e.preventDefault();
 });
+
+$('[data-scroll-to]').on('click', e => {
+  e.preventDefault();
+
+  const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+
+
+  performTransition(target);
+
+})
+
+if (isMobile) {
+  $(document).swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      /**
+       * плагин возвращает фактическое...
+       * ...
+       */
+      const scrollDirection = direction === 'down' ? 'up' : 'down';
+      
+      scrollToSection(scrollDirection);
+    }
+  })
+}
 
