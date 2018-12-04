@@ -22,9 +22,12 @@ html {
   overflow: hidden; }
 
 .maincontent {
-  height: 100%;
   transform: translateY(0);
-  transition: transform 1.5s; }
+  transition: transform 1.5s;
+  height: 100%;
+  min-height: 650px;
+  transition: 1s;
+  will-change: transform; }
 
 .container {
   display: flex;
