@@ -7,12 +7,7 @@
   height: 100%;
   background-size: cover; 
   position: relative;
-@include tablets {
-  min-height:  rem(850px);
 }
-@include phones{
-  min-height: rem(850px);
-}}
  
 .popup-menu{
   display: none;

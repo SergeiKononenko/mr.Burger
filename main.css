@@ -55,12 +55,6 @@ html {
   height: 100%;
   background-size: cover;
   position: relative; }
-  @media (max-width: 768px) {
-    .section-top {
-      min-height: 53.125rem; } }
-  @media (max-width: 480px) {
-    .section-top {
-      min-height: 53.125rem; } }
 
 .popup-menu {
   display: none;
