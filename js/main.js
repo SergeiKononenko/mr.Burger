@@ -216,5 +216,7 @@ $(document).on('wheel', e =>{
     
     scrollToSection('up');
   }
+
+  touchmove: e => e.preventDefault();
 });
 
