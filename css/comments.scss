@@ -64,17 +64,23 @@
     font-family: "Gagalin-Regular";
     color: white;
     font-size: rem(14px);
-    line-height: rem(10px);
+    line-height: rem(45px);
     text-transform: uppercase; 
+    text-align: left;
     @include tablets{
       font-size: rem(20px);
-      margin-bottom: rem(0px);}
+      margin-bottom: rem(0px);
+      text-align: center;
+      line-height: rem(45px);
+    }
   
   @include phones{
-    font-size: rem(30px);}
+    font-size: rem(30px);
   text-align: center;
-line-height: rem(45px);} 
+} }
   
+
+
   .section-comment__text-letter {
     font-size: rem(14px);
     line-height: 1.7;
@@ -97,5 +103,96 @@ line-height: rem(45px);}
     text-decoration: none;
     color: #ffffff;
     background-color: #3c3d3e;
-    border-radius: rem(5px); }
+    border-radius: rem(5px);
+  cursor: pointer; }
   
+    .overlay {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(1,1,1, 0.93);
+      overflow: hidden;
+      display: none;
+    }
+    
+    .popup-modal {
+      background: #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35%;
+      height: rem(250px);
+      z-index: 100;
+      padding: rem(20px);
+      @include tablets{
+        width: 75%;}
+    
+    @include phones{
+      width: 75%;
+     }}
+    
+
+    .popup-modal .section-comment__text-autor {
+color:#f9b43b;
+text-align: center;
+font-size: rem(18px);
+@include tablets{
+  font-size: rem(22px);
+  text-align: center;
+}
+
+@include phones{
+font-size: rem(22px);
+}
+    }
+
+    .popup-modal .section-comment__text-letter{
+color: #3c3d3e;
+
+@include tablets{
+  font-size: rem(18px);}
+  text-align: center;
+@include phones{
+display: flex;
+font-size: rem(18px);
+text-align: center;
+}
+    }
+
+    .popup-modal__close{
+      position: absolute;
+      top: 0;
+      right: 0;
+      right: rem(20px);
+        top: rem(20px);
+        width: rem(15px);
+        height: rem(15px);
+        cursor: pointer;
+    &::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      background: #3c3d3e;
+      width: rem(25px);
+    height: rem(5px);
+    transform: rotate(45deg);
+    border-radius: rem(5px);
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background: #3c3d3e;
+      width: rem(25px);
+    height: rem(5px);
+    transform: rotate(135deg);
+    border-radius: rem(5px);
+    }}
+    
