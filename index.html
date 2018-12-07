@@ -23,7 +23,7 @@
                         <li class="popup-menu__item"><a href="#menu" class="popup-menu__link">меню</a></li>
                         <li class="popup-menu__item"><a href="#comments" class="popup-menu__link">отзывы</a></li>
                         <li class="popup-menu__item"><a href="#" class="popup-menu__link">как мы работаем</a></li>
-                        <li class="popup-menu__item"><a href="#contacts" class="popup-menu__link">контакты</a></li>
+                        <li class="popup-menu__item"><a href="#map" class="popup-menu__link">контакты</a></li>
                       </ul>
                     </div>
                       <div class="container">    
@@ -40,8 +40,9 @@
                                   <li class="menu__item"><a href="#team" class="menu__link">команда</a></li>
                                   <li class="menu__item"><a href="#menu" class="menu__link">меню</a></li>
                                   <li class="menu__item"><a href="#comments" class="menu__link">отзывы</a></li>
+                    
                                   <li class="menu__item"><a href="#" class="menu__link">как мы работаем</a></li>
-                                  <li class="menu__item"><a href="#contacts" class="menu__link">контакты</a></li>
+                                  <li class="menu__item"><a href="#map" class="menu__link">контакты</a></li>
                               </ul>
                             </nav>
                               <button class="order"><a href="#order" class="order-link" >заказать</a> </button>
@@ -767,13 +768,11 @@
                                 </form></div>
                                 
                             </section>
-                            <section class="section section-contacts" id="contacts">
-                              <div class="section-contacts__map">
-                               <div class="section-contacts__map-marker1"> <img src="./img/map-marker.svg" class="map-marker" alt=""></div>
-                               <div class="section-contacts__map-marker2"> <img src="./img/map-marker.svg" class="map-marker" alt=""></div>
-                               <div class="section-contacts__map-marker3"> <img src="./img/map-marker.svg" class="map-marker" alt=""></div>
-                               <div class="section-contacts__map-marker4"> <img src="./img/map-marker.svg" class="map-marker" alt=""></div>
-                              </div> 
+                      
+                              <div class="section-contacts map " id="map-section">
+                                
+                                    <div class="map__interactive" id="map">
+                                    </div>
                               <footer class="footer">
                                 <div class="footer__coll">
                                   <div class="footer__coll-adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15
@@ -792,26 +791,28 @@
                                   </ul>
                                 </div>
                               </footer>
-                            </section>
+                            
 
             </div>
      </div>
         <div class="fixed-nav">
           <ul class="fixed-nav__list">
-              <li class="fixed-nav__page active"> <a class="fixed-nav__link" href=""  data-scroll-to="1"></a>  </li>
+              <li class="fixed-nav__page active"><a class="fixed-nav__link" href=""  data-scroll-to="0"></a>  </li>
+              <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="1"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="2"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="3"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="4"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="5"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="6"></a> </li>
               <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="7"></a> </li>
-              <li class="fixed-nav__page"><a  class="fixed-nav__link" href="" data-scroll-to="8"></a></li>
               
           </ul>
       </div>
+      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
       <script src="./js/main.js"></script>
       
 </body>

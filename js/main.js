@@ -155,7 +155,7 @@ function moveRight(){
 };
 
 //scroll//
-const sections = $("section");
+const section = $("section");
 const display = $(".maincontent");
 let inScroll = false;
 
@@ -165,7 +165,7 @@ const isMobile = mobileDetect.mobile();
 const setActivePage = pageEq => {
   $('.fixed-nav__page').eq(pageEq).addClass('active')
     .siblings().removeClass('active')
-} 
+}
 
 const performTransition = sectionEq => {
   const position = `${sectionEq * -100}%`;
@@ -174,7 +174,7 @@ const performTransition = sectionEq => {
 
   inScroll = true;
 
-  sections
+  section
     .eq(sectionEq)
     .addClass("active")
     .siblings()
@@ -192,7 +192,7 @@ const performTransition = sectionEq => {
 };
 
 const scrollToSection = direction => {
-  const activeSection = sections.filter(".active");
+  const activeSection = section.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
@@ -248,5 +248,65 @@ if (isMobile) {
       scrollToSection(scrollDirection);
     }
   });
-}
+};
 
+
+//map//
+
+$(function(){
+
+  ymaps.ready(init);
+  var myMap,
+  myPlacemark,
+  myPlacemarks = [{
+      latitude: 59.915038,
+      longitude: 30.486096,
+      hintContent: 'Mr.Burger на Товарищеском', 
+      balloonContent: 'Товарищеский проспект, 20/27'
+  },
+  {
+      latitude: 59.94708381,
+      longitude: 30.38481688,
+      hintContent: 'Mr.Burger на Тверской', 
+      balloonContent: 'Тверская улица, 16'
+  },
+  {
+      latitude: 59.891295,
+      longitude: 30.316907,
+      hintContent: 'Mr.Burger на Московском', 
+      balloonContent: 'Московский проспект, 103к2'
+  },
+  {
+      latitude: 59.973999,
+      longitude: 30.311091,
+      hintContent: 'Mr.Burger на Чапыгина', 
+      balloonContent: 'улица Чапыгина, 13А'
+  }];
+  
+  function init(){     
+      myMap = new ymaps.Map("map", {
+          center: [59.92606548, 30.32610869],
+          zoom: 11
+      });
+
+      myPlacemarks.forEach(function(obj) {
+          myPlacemark = new ymaps.Placemark([obj.latitude, obj.longitude], { 
+          hintContent: obj.hintContent, 
+          hintContent: obj.balloonContent
+      }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/icons/map-marker.svg',
+          iconImageSize: [46, 57],
+          iconImageOffset: [-15, -50]
+          });
+
+          myMap.geoObjects.add(myPlacemark);
+      });
+      
+      myMap.behaviors
+      .disable('scrollZoom')
+      .disable('drag')
+
+  }
+
+})
